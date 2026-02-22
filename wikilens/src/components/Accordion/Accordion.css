@@ -1,0 +1,35 @@
+.accordion-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.accordion-item.active {
+  border-left: 4px solid #4f46e5;
+  padding-left: 10px;
+}
+
+.accordion-question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+  transform: rotate(180deg);
+}
+
+.accordion-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.accordion-answer.open {
+  max-height: 200px;
+}
